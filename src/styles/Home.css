@@ -1,0 +1,156 @@
+.home {
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* Two columns: 1 for the image, 2 for the text */
+  grid-template-rows: repeat(3, 1fr); /* Three equal rows */
+  width: 75vmin;
+  height: 75vmin;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-top: 2rem;
+  color: var(--softred);
+  border-radius: var(--border-radius);
+  gap: 1rem; /* Add space between items (rows and columns) */
+}
+
+.home__profile {
+  grid-column: 1 / 2; /* Image takes up the first column */
+  grid-row: 1 / 4; /* Image spans 3 rows */
+  background-color: var(--background-color);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+.home__profile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--border-radius);
+}
+
+.home__wave {
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+/* Keyframes for the wave animation */
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(-14deg);
+  }
+  20% {
+    transform: rotate(8deg);
+  }
+  30% {
+    transform: rotate(-14deg);
+  }
+  40% {
+    transform: rotate(4deg);
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.home__summary {
+  grid-column: 2 / 3; /* Text takes up the second column */
+  grid-row: 1 / 4; /* Text spans 3 rows */
+  background-color: var(--background-color);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+.home__introduction,
+.home__tagline,
+.home__resume {
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+
+.home__resume a {
+  text-decoration: none;
+}
+
+.download-button {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: var(--softred);
+  color: var(--background-color);
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+  text-decoration: none;
+}
+
+.download-button:hover {
+  color: var(--apricot);
+  background-color: var(--background-color);
+  transform: scale(1.05);
+}
+
+.download-button:hover svg {
+  fill: var(--apricot);
+}
+
+.download-button svg {
+  margin-right: 0.5rem;
+  fill: var(--background-color);
+  transition: fill 0.2s ease;
+}
+
+/* Media Queries for mobile responsiveness */
+@media (max-width: 768px) {
+  .home {
+    width: 90vmin;
+    height: 90vmin;
+  }
+
+  .home__introduction,
+  .home__tagline,
+  .home__resume {
+    font-size: 1.5rem;
+  }
+
+  .download-button {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .home {
+    width: 85vmin;
+    height: 85vmin;
+  }
+
+  .home__introduction,
+  .home__tagline,
+  .home__resume {
+    font-size: 0.85rem;
+  }
+
+  .download-button {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.7rem;
+  }
+}

@@ -1,0 +1,150 @@
+.contact {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  grid-template-rows: repeat(3, auto); /* 3 rows */
+  width: 75vmin;
+  height: 75vmin;
+  color: var(--periwinkle);
+  border-radius: var(--border-radius);
+  gap: 1rem;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.contact__github,
+.contact__linkedin,
+.contact__email {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  padding: 0.5rem;
+  gap: 1rem;
+  cursor: pointer;
+  background-color: var(--periwinkle);
+  color: var(--background-color);
+  border-radius: var(--border-radius);
+  transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+  text-decoration: none;
+}
+
+.contact__github:hover,
+.contact__linkedin:hover,
+.contact__email:hover {
+  background-color: var(--softred);
+  transform: scale(1.05);
+}
+
+.contact__github:hover svg,
+.contact__linkedin:hover svg,
+.contact__email:hover svg {
+  fill: var(--background-color);
+}
+
+.contact svg {
+  padding-right: 0.3rem;
+  font-size: 2rem;
+  fill: var(--background-color);
+  transition: fill 0.2s ease;
+}
+
+/* Grid-specific positioning */
+.contact__github {
+  grid-column: 1;
+  grid-row: 1;
+  justify-items: stretch;
+}
+
+.contact__linkedin {
+  grid-column: 2;
+  grid-row: 1;
+  justify-items: stretch;
+}
+
+.contact__email {
+  grid-column: 3;
+  grid-row: 1;
+  justify-items: stretch;
+}
+
+.contact__github a,
+.contact__linkedin a,
+.contact__email a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  color: inherit;
+}
+
+.contact__form {
+  grid-column: 1 / 4;
+  grid-row: 2 / 4;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-color);
+  border-radius: var(--border-radius);
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.contact__form h1 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--periwinkle);
+}
+
+.contact__form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 1.2rem;
+  color: var(--periwinkle);
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--periwinkle);
+  background-color: var(--background-color);
+  color: var(--periwinkle);
+  resize: none;
+}
+
+.form-group textarea {
+  height: 9rem;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--softred);
+}
+
+button {
+  padding: 1rem;
+  font-size: 1.2rem;
+  background-color: var(--periwinkle);
+  color: var(--background-color);
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--softred);
+}

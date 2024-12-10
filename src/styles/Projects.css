@@ -1,0 +1,79 @@
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto; /* Adjust rows automatically */
+  width: 75vmin;
+  height: 75vmin;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-top: 2rem;
+  color: var(--babyblue);
+  border-radius: var(--border-radius);
+  gap: 1rem; /* Add space between items (rows and columns) */
+}
+
+.project__showcase {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-color);
+  grid-column: auto;
+  grid-row: auto;
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  overflow: hidden;
+}
+
+.project__showcase__reverse {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--babyblue);
+  color: var(--background-color);
+  grid-column: auto;
+  grid-row: auto;
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  overflow: hidden;
+}
+
+.project__showcase a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the icon and text */
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: var(--babyblue); /* Same as button */
+  color: var(--background-color); /* Text color */
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.project__showcase a:hover {
+  color: var(--periwinkle); /* Text color on hover */
+  background-color: var(--background-color); /* Background color on hover */
+  transform: scale(1.05); /* Slight scaling effect */
+}
+
+.project__showcase a:hover svg {
+  fill: var(--periwinkle); /* Change icon color on hover */
+}
+
+.project__showcase svg {
+  margin-right: 0.5rem;
+  fill: var(--background-color); /* Default icon color */
+  transition: fill 0.2s ease; /* Smooth fill transition */
+}
+
+.project__showcase img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 1rem;
+}
