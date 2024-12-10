@@ -148,3 +148,71 @@ button {
 button:hover {
   background-color: var(--softred);
 }
+@media (max-width: 1024px) {
+  .contact {
+    width: 85vmin;
+    height: auto; /* Let height adjust dynamically */
+    gap: 1.5rem; /* Slightly larger gap */
+  }
+
+  .contact__github,
+  .contact__linkedin,
+  .contact__email {
+    font-size: 0.9rem; /* Slightly reduce text size */
+    padding: 0.4rem; /* Compact padding */
+  }
+
+  .contact__form {
+    padding: 0.8rem; /* Slightly reduce padding */
+  }
+
+  .contact__form h1 {
+    font-size: 1.4rem; /* Adjust title size */
+  }
+}
+
+@media (max-width: 768px) {
+  .contact {
+    width: 85vmin;
+    height: auto; /* Let height adjust dynamically */
+    gap: 1.5rem; /* Slightly larger gap */
+  }
+
+  .contact__github,
+  .contact__linkedin,
+  .contact__email {
+    font-size: 0.9rem; /* Slightly reduce text size */
+    padding: 0.4rem; /* Compact padding */
+  }
+
+  .contact__form {
+    padding: 0.8rem; /* Slightly reduce padding */
+  }
+
+  .contact__form h1 {
+    font-size: 1.4rem; /* Adjust title size */
+  }
+}
+
+@media (max-width: 480px) {
+  .contact {
+    width: 85vmin;
+    height: auto; /* Let height adjust dynamically */
+    gap: 1.5rem; /* Slightly larger gap */
+  }
+
+  .contact__github,
+  .contact__linkedin,
+  .contact__email {
+    font-size: 0.9rem; /* Slightly reduce text size */
+    padding: 0.4rem; /* Compact padding */
+  }
+
+  .contact__form {
+    padding: 0.8rem; /* Slightly reduce padding */
+  }
+
+  .contact__form h1 {
+    font-size: 1.4rem; /* Adjust title size */
+  }
+}

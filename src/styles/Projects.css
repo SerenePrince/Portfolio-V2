@@ -77,3 +77,51 @@
   height: auto;
   border-radius: 1rem;
 }
+
+@media (max-width: 1024px) {
+  .projects {
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    grid-template-rows: auto auto; /* Dynamically adjust rows */
+    width: 85vmin;
+    height: auto; /* Let height adjust dynamically */
+    gap: 1.5rem; /* Slightly increased gap */
+  }
+
+  .project__showcase,
+  .project__showcase__reverse {
+    padding: 1rem; /* Keep padding consistent */
+  }
+}
+
+@media (max-width: 768px) {
+  .projects {
+    grid-template-columns: 1fr; /* Single-column layout */
+    grid-template-rows: auto; /* Adjust rows dynamically */
+    width: 90vmin;
+    gap: 1rem; /* Reduced gap */
+  }
+
+  .project__showcase,
+  .project__showcase__reverse {
+    grid-column: 1 / 2; /* Full width */
+    padding: 0.75rem;
+    font-size: 0.9rem; /* Slightly smaller text size */
+  }
+}
+
+@media (max-width: 480px) {
+  .projects {
+    width: 85vmin;
+    gap: 0.75rem; /* Tighter spacing */
+  }
+
+  .project__showcase,
+  .project__showcase__reverse {
+    font-size: 0.8rem; /* Smaller text size */
+    padding: 0.5rem; /* Compact padding */
+  }
+
+  .project__showcase img {
+    max-width: 90%; /* Slightly smaller images */
+  }
+}
