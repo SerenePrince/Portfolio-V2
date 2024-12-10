@@ -1,6 +1,6 @@
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import { useRef } from "react";
-import emailjs from "@email/browser";
+import emailjs from "@emailjs/browser";
 import "../styles/Contact.css";
 
 function Contact() {
