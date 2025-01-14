@@ -1,77 +1,73 @@
 ---
-# Portfolio
 
-[Available here!](https://sereneprince.github.io/Portfolio-2025/)
+# 🌟 **Noah Park-Nguyen's Portfolio (2025 Version)**
 
-## 🌐 Overview
-
-The **Portfolio** is a React-based web application designed to showcase my skills, projects, and experience as a **Full-Stack Developer**. Built with **React** and styled with **CSS**, this portfolio features dynamic sections such as **Home**, **About**, **Experience**, **Projects**, and **Contact**, allowing easy navigation and a smooth user experience. The layout is fully responsive, providing an engaging experience across all devices.
----
-
-## ✨ Features
-
-- **React Components**: Sections like **Home**, **About**, **Experience**, **Projects**, and **Contact** are separate components, making the code modular and maintainable.
-- **Dynamic Navigation**: The navigation bar dynamically highlights the current section and allows for smooth transitions between sections using React's state management.
-- **Animations**: Each section uses fade-in animations from different directions (e.g., fade-in from left, right, top, bottom) to create a visually appealing effect.
-- **Responsive Layout**: The design adapts seamlessly to different screen sizes, ensuring that the website looks great on mobile, tablet, and desktop.
-- **Dark Mode Support**: A clean and simple dark mode to enhance the browsing experience.
-- **External Links**: Direct access to my **GitHub**, **LinkedIn**, and **Email** for networking opportunities.
+Welcome to my **2025 Portfolio**! This version reflects my journey as a **Full-Stack Developer**, showcasing my projects, skills, and experiences. Explore it live [here](https://sereneprince.github.io/Portfolio-2025/).
 
 ---
 
-## 🚀 Installation
+## 🌐 **Overview**
 
-### Prerequisites
+The **2025 Portfolio** is a sleek, modern web application built with **React** and styled with **CSS**. This updated version features an intuitive design, dynamic sections, and a fully responsive layout. It highlights my work as a developer, making it easier to navigate through sections like **Home**, **About**, **Experience**, **Projects**, and **Contact**. The layout is designed for seamless browsing on desktops, tablets, and mobile devices.
 
-- Node.js (version 14 or higher)
-- npm (Node Package Manager)
-
-### Setup
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/SerenePrince/Portfolio-2025.git
-   cd portfolio
-   ```
-
-2. Install dependencies:
-
-   ```bash
-   npm install
-   ```
-
-3. Start the development server:
-
-   ```bash
-   npm start
-   ```
-
-4. Open your browser and navigate to `http://localhost:PORT` to view the portfolio.
+Key features include:
+- **Dark Mode** with pastel color accents, enhancing readability and accessibility.
+- Smooth transitions and animations, creating an engaging experience.
+- Dynamic navigation, with real-time highlights for the active section.
 
 ---
 
-## 🛠️ Development Highlights
+## ✨ **Features**
 
-### Technologies Used
-
-- **React**: The main library for building the interactive user interface.
-- **React Icons**: For adding social media icons like GitHub, LinkedIn, and Email.
-- **CSS3**: For styling the layout, animations, and responsiveness.
-
-### Key Features
-
-- **React State Management**: Uses React's `useState` hook to manage and switch between different components for a smooth user experience.
-- **Dynamic Routing**: The navigation bar highlights the active section dynamically based on user interactions.
-- **Custom Animations**: CSS animations applied to sections, making them fade in from different directions.
-- **Modular Components**: Each section (e.g., About, Experience, Projects) is separated into its own React component for better code organization.
+- **React Components**: Well-structured, modular sections like **Home**, **About**, **Experience**, **Projects**, and **Contact**, making the codebase clean and maintainable.  
+- **Dynamic Navigation**: Highlights the currently active section for easy navigation, providing a smoother user experience.  
+- **Animations**: Fade-in animations from different directions to add a visually appealing touch.  
+- **Responsive Layout**: Optimized for mobile, tablet, and desktop viewing, ensuring a seamless user experience.  
+- **Dark Mode**: Clean, modern design with dark mode support for better accessibility.  
+- **External Links**: Direct links to my **GitHub**, **LinkedIn**, and **Email** for easy networking and contact.
 
 ---
 
-## 📜 Planned Enhancements
+## 🚀 **Getting Started**
 
-- **Back-End Integration**: Planning to integrate a back-end framework (Flask or Django) for dynamic content and data-driven features.
-- **Enhanced Animations**: More advanced animations and interactions to further engage users.
-- **Content Personalization**: Add user-specific content or a contact form for direct communication.
+Feel free to explore my portfolio live at:  
+[**Noah's Portfolio (2025)**](https://sereneprince.github.io/Portfolio-2025/)
+
+---
+
+## 🛠️ **Technologies Used**
+
+- **Frontend**: React.js, HTML, CSS  
+- **Version Control**: Git, GitHub  
+- **Deployment**: GitHub Pages  
+
+---
+
+## 📂 **Featured Projects**
+
+Here are some key projects highlighted in this portfolio:
+
+### 1. **Weather App**  
+- Fetches real-time weather data via API calls.  
+- Displays dynamic weather icons based on conditions.  
+- Error handling for invalid input and API issues.
+
+### 2. **Typing Test Application**  
+- A typing accuracy and speed tracker for practice.  
+- Provides words-per-minute (WPM) and accuracy metrics after each session.
+
+### 3. **Battleship Game**  
+- A Java-based game featuring both single-player and multiplayer modes.  
+- Engaging gameplay with strategic elements.
+
+---
+
+## 📜 **Contact**
+
+Feel free to connect with me through the following platforms:
+
+- **Email**: [noahparknguyen@gmail.com](mailto:noahparknguyen@gmail.com)  
+- **LinkedIn**: [linkedin.com/in/nparknguyen](https://www.linkedin.com/in/nparknguyen/)  
+- **GitHub**: [github.com/SerenePrince](https://github.com/SerenePrince)
 
 ---
